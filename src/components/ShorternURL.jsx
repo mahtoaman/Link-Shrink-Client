@@ -11,7 +11,7 @@ const ShortenURL = () => {
     try {
       setIsLoading(true);
 
-      const response = await axios.post("http://localhost:8000/url/shorten", {
+      const response = await axios.post("https://linkshrink-vorp.onrender.com/url/shorten", {
         longUrl,
       });
       const { data } = response.data;
